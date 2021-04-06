@@ -1,0 +1,118 @@
+@media (max-width: 780px) {
+  header {
+    display: none;
+    grid-column: 1/6;
+    grid-row: 1/5;
+    z-index: 100;
+  }
+  header button {
+    background: #e1dd8f;
+    color: #2a2e45;
+    padding: 16px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: #2a2e45;
+    border-radius: 6px;
+    text-transform: capitalize;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  nav {
+    display: grid;
+    width: 100%;
+    height: 9vh;
+    align-items: center;
+    background: #f4f4f4;
+    color: #084887;
+    border-bottom: 2px solid #084887;
+  }
+  nav .fas {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  main {
+    grid-column: 1/6;
+    grid-row: 1/5;
+  }
+  .main-container {
+    width: 90%;
+    margin: 0 auto;
+    color: #000;
+    text-align: center;
+    line-height: 0.2in;
+  }
+  .main-container h1 {
+    line-height: 0.5in;
+  }
+  main .main-container input[type="email"] {
+    width: 100%;
+    padding: 17px 20px;
+    border-radius: 7px;
+    outline: none;
+    margin-top: 2rem;
+  }
+  main .main-container input[type="submit"] {
+    padding: 9px 25px;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: #2a2e45;
+    color: #fff;
+    margin-top: 0.5rem;
+  }
+  section,
+  aside,
+  article {
+    display: none;
+  }
+}
+
+@media (max-width: 1370px) {
+  body {
+    background: #f4f4f4;
+  }
+  nav {
+    display: grid;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    background: #f4f4f4;
+    color: #084887;
+    border-bottom: 2px solid #084887;
+  }
+  header {
+    display: none;
+    grid-column: 1/6;
+    grid-row: 1/3;
+    z-index: 100;
+  }
+
+  main {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+  nav .fas {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  section {
+    grid-column: 1/6;
+    grid-row: 2/3;
+  }
+  .section-container,
+  .article-container,
+  .aside-container {
+    width: 90%;
+    margin: 0 auto;
+    background: #2a2e45;
+  }
+  article {
+    grid-column: 1/6;
+    grid-row: 3/4;
+  }
+  aside {
+    grid-column: 1/6;
+    grid-row: 4/5;
+  }
+}
